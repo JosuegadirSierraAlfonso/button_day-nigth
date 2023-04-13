@@ -32,6 +32,9 @@ body{
     border-bottom: 7px solid #f5eaea;
     transition: 800ms ease-in-out;
 }
+.black{
+    background-color: black;
+}
 .fondoEsfera{
     position: absolute;
     height: 150%;
@@ -45,8 +48,14 @@ body{
     left: -10%;
     transition: 800ms ease-in-out;
 }
+.right{
+    left: 50%;
+}
 .fondoEsfera:hover{
     left: -3%;
+}
+.fondoEsfera.right:hover{
+    left: 43%;
 }
 .fondoEsfera::before{
     content: "";
@@ -95,6 +104,9 @@ body{
     cursor: pointer;
     transition: 800ms ease-in-out;
 }
+.center{
+    right: -4%;
+}
 .crater1{
     position: absolute;
     height: 30%;
@@ -127,6 +139,9 @@ body{
     height: 100%;
     position: relative;
     transition: 800ms ease-in-out;
+}
+.abajo{
+    margin-top: 120%;
 }
 .n1{
     position: absolute;
@@ -258,6 +273,11 @@ body{
         position: absolute;
         aspect-ratio: 2.1/1;
         transition: 800ms ease-in-out;
+
+        bottom: 100%;
+    }
+    .newstar{
+        bottom: 0%;
     }
     .star1{
         height: 25%;
